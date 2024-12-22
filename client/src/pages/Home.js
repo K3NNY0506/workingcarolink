@@ -622,7 +622,6 @@ function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");  // State for search term
 
-  const { authState } = useContext(AuthContext);
   const navigate = useNavigate();
 
   // Fetch posts on component mount and whenever searchTerm changes
